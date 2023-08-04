@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* 마패리스리하삐지보박텍스트데코넌컬기본텍 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #333;
+}
+
+.inner {
+  display: flex;
+  background: lightblue;
+}
+
+header {
+  width: 200px;
+  background: lightpink;
+}
+
+#gnb .depth1 {
+  padding: 0 30px;
+}
+
+#gnb .depth1>li>a {
+  display: block;
+  position: relative;
+  padding: 11px 0 8px;
+  border-bottom: 1px solid #767676;
+}
+
+#gnb .depth1>li>a::after {
+  content: ">";
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+#gnb .depth2 {
+  padding-top: 10px;
+}
+
+#gnb .depth2 a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #5e5e5e;
+}
+
+#gnb .depth2 a:hover {
+  background: #f8ccee;
+  color: rgb(255, 255, 255);
+}
+
+
+main {
+  /* flex-grow: 1; 실무에서는 이걸 더 많이 쓴다 
+  가로사이즈는 나머지 다 쓴다라는 뜻*/
+  width: calc(100% - 200px);
+  background: lightsalmon;
+}
+
+footer {
+  background: lightgreen;
+  height: 100px;
+}
